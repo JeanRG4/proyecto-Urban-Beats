@@ -1,0 +1,411 @@
+/* ===========================
+   Estilos Globales
+=========================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* ===========================
+     Encabezado
+  =========================== */
+  header {
+    background-color: #212121;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  header .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 50px;
+    width: 50px;         /* Asegura un tamaño fijo para lograr el efecto circular */
+    border-radius: 50%;   /* Hace que la imagen sea circular */
+    object-fit: cover;    /* Asegura que la imagen se recorte adecuadamente */
+  }
+  
+  .logo span {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;         /* Asegúrate de que el color contraste con el fondo del header */
+  }  
+
+  /* Navegación */
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ff9800;
+  }
+  
+  /* Buscador */
+  .search {
+    position: relative;
+  }
+  
+  .search input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    width: 200px;
+    transition: width 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .search input:focus {
+    width: 250px;
+    border-color: #ff9800;
+  }
+  
+  /* ===========================
+     Banner Principal
+  =========================== */
+  .banner {
+    background: url('banner.jpg') center/cover no-repeat;
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  .banner .banner-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .banner h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  .banner .btn {
+    display: inline-block;
+    background-color: #ff9800;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .banner .btn:hover {
+    background-color: #e68900;
+  }
+  
+  /* ===========================
+     Contenido Principal
+  =========================== */
+  main.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .main-content {
+    flex: 1 1 65%;
+  }
+  
+  .sidebar ul {
+    text-align: center;
+    padding: 0;
+    list-style: none;
+}
+
+  /* Artículos / Noticias */
+  .articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .news-item {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .news-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .news-item img {
+    width: 100%;
+    height: auto;
+    max-height: 250px; /* Ajusta la altura para mantener equilibrio visual */
+    object-fit: contain; /* Asegura que la imagen completa sea visible */
+  }
+  
+  
+  .news-item h3 {
+    font-size: 1.4rem;
+    margin: 15px;
+  }
+  
+  .news-item p {
+    flex: 1;
+    margin: 0 15px 15px;
+  }
+  
+  .news-item a {
+    background: #ff9800;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .news-item a:hover {
+    background: #e68900;
+  }
+  
+  /* ===========================
+     Sidebar
+  =========================== */
+  .sidebar section {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #ff9800;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar ul li img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    max-width: 300px; /* Evita que crezca demasiado */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Evita espacios extra debajo de la imagen */
+    margin: 10px auto; /* Centra la imagen dentro del `li` */
+    border-radius: 5px; /* Opcional: Bordes redondeados */
+  }
+  
+  .sidebar ul li:last-child {
+    border-bottom: none;
+  }
+  /* ===========================
+   Variables Globales
+=========================== */
+:root {
+  --max-width: 1200px;
+  --padding: 20px;
+  --section-padding-vertical: 40px;
+
+  --color-blanco: #fff;
+  --color-texto: #212121;
+
+  --verde-principal: #4CAF50;
+  --verde-oscuro: #388E3C;
+  --verde-activo: #2E7D32;
+
+  --footer-fondo: #212121;
+  --footer-texto: #bbb;
+  --hover-destacado: #ff9800;
+}
+
+/* ===========================
+   Secciones Adicionales
+=========================== */
+
+section {
+  max-width: var(--max-width);
+  margin: 20px auto;
+  padding: var(--section-padding-vertical) var(--padding);
+  background: var(--color-blanco);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos en la sección */
+  gap: 20px; /* Espacio entre el título, imagen y botón */
+}
+
+section h2 {
+  font-size: 2rem;
+  color: var(--color-texto);
+  text-align: center;
+}
+
+/* ===========================
+   Imágenes dentro de las secciones
+=========================== */
+
+section img {
+  max-width: 90%; /* No ocupar todo el ancho */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ===========================
+   Botones de Artículos
+=========================== */
+
+.article-btn {
+  background-color: var(--verde-principal);
+  color: var(--color-blanco);
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  align-self: flex-start; /* Ubica el botón en la esquina inferior izquierda */
+  margin-left: 20px; /* Evita que se pegue demasiado al borde */
+}
+
+/* Estados interactivos */
+.article-btn:hover {
+  background-color: var(--verde-oscuro);
+  transform: scale(1.05);
+}
+
+.article-btn:active {
+  background-color: var(--verde-activo);
+  transform: scale(0.98);
+}
+
+.article-btn:focus {
+  outline: 2px solid var(--verde-oscuro);
+  outline-offset: 2px;
+}
+
+/* ===========================
+   Pie de Página
+=========================== */
+
+footer {
+  background: var(--footer-fondo);
+  color: var(--footer-texto);
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+footer .container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--padding);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .social-media a {
+  color: var(--footer-texto);
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer .social-media a:hover {
+  color: var(--hover-destacado);
+}
+
+footer .contacto,
+footer .legal {
+  margin: 10px 0;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 768px) {
+  header .container,
+  main.container,
+  footer .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .search input {
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  .main-content,
+  .sidebar {
+    flex: 1 1 100%;
+  }
+  
+  .articles {
+    flex-direction: column;
+  }
+}

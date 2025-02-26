@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompuTech Store - Tu Tienda de Componentes de Computadoras</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="yo.jpeg" alt="CompuTech Store"> <span>CompuTech Store</span>
+            </div>
+            <nav>
+                <ul> 
+                    <li><a href="#componentes-section">Componentes</a></li>
+                    <li><a href="#noticias-section">Noticias</a></li>
+                    <li><a href="#reviews-section">Reviews</a></li>
+                    <li><a href="#lanzamientos-section">Lanzamientos</a></li>
+                    <li><a href="#galeria-section">Galería</a></li>
+                    <li><a href="#foro-section">Foro</a></li>
+                    <li><a href="#tienda-section">Tienda</a></li>   
+                </ul>
+            </nav>
+            <div class="search">
+                <input type="text" id="search" placeholder="Buscar..." onkeyup="filtrar()" onkeypress="buscar(event)">
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="banner">
+        <div class="banner-content">
+            <h1>¡Potencia tu PC con los Mejores Componentes!</h1>
+            <a href="#ofertas-section" class="btn">Descubre nuestras ofertas</a>
+        </div>
+    </section>
+
+    <!-- Contenido Principal -->
+    <main class="container">
+        <section id="reviews-section">
+            <h2>Últimas Noticias en Tecnología</h2>
+            <div class="articles">
+                <article class="news-item">
+                    <img src="https://www.compuzone.com.ec/images/thumbs/0033792_procesador-intel-core-i9-12900-24ghz-16-nucleos-ddr4-lga-1700.jpeg" alt="Noticia 1">
+                    <h3>Revolucionario Procesador de 12 Núcleos</h3>
+                    <p>La nueva CPU promete un rendimiento sin precedentes para gamers y profesionales. Descubre todos sus detalles y características...</p>
+                    <a href="https://www.xataka.com/componentes/intel-core-12a-generacion-alder-lake-serie-h-caracteristicas-precio-ficha-tecnica" target="_blank">Leer más</a>
+                </article>
+                <article class="news-item">
+                    <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/news/rtx-50-series-graphics-cards-gpu-laptop-announcements/geforce-rtx-5090-founders-edition-photo-007.png" alt="Noticia 2">
+                    <h3>NVIDIA Anuncia su Nueva Serie de Tarjetas Gráficas</h3>
+                    <p>Con innovaciones que cambiarán la experiencia de juego y el diseño gráfico, conoce la nueva gama y sus beneficios...</p>
+                    <a href="https://www.nvidia.com/es-la/geforce/news/rtx-50-series-graphics-cards-gpu-laptop-announcements/" target="_blank">Leer más</a>
+                </article>
+                <article class="news-item">
+                    <img src="https://dlcdnimgs.asus.com/websites/global/products/QUxljf1tw7eD3ZT4/img/kv/kv_mobile.jpg" alt="Noticia 3">
+                    <h3>Review: Placa Madre ASUS ROG Zenith</h3>
+                    <p>Analizamos en profundidad la última placa madre de ASUS, diseñada para los entusiastas del overclocking y el gaming extremo...</p>
+                    <a href="https://rog.asus.com/mx/motherboards/rog-zenith/rog-zenith-extreme-model/" target="_blank">Leer más</a>
+                </article>
+            </div>
+        </section>
+    </main>
+    
+    <aside class="sidebar"> 
+        <section id="ofertas-section">
+            <h3>🎉 Ofertas Especiales</h3>
+            <p>Aprovecha descuentos exclusivos en los mejores componentes del mercado.</p>
+            <ul>
+                <li>
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_853406-MLA51467786406_092022-O.webp" alt="Procesador Intel Core i9">
+                    <strong>💻 Procesador Intel Core i9</strong> - Potencia extrema con <span style="color: red;">15% de descuento</span>.
+                </li>
+                <li>
+                    <img src="https://nomadaware.com.ec/wp-content/uploads/2023/02/GeForce-RTX%E2%84%A2-4080-16GB-EAGLE-01.png" alt="Tarjeta Gráfica RTX 4080">
+                    <strong>🎮 Tarjeta Gráfica RTX 4080</strong> - Gráficos de última generación con <span style="color: red;">10% de descuento</span>.
+                </li>
+                <li>
+                    <img src="https://coretms.tecnomegastore.ec/assets/images/main/24/HDDKINSNV3S1000.webp" alt="SSD NVMe 1TB">
+                    <strong>⚡ SSD NVMe 1TB</strong> - Velocidad ultrarrápida con <span style="color: red;">20% de descuento</span>.
+                </li>
+            </ul>
+        </section>
+    
+        <section id="lanzamientos-section">
+            <h3>🚀 Próximos Lanzamientos</h3>
+            <p>Descubre los componentes más esperados antes que nadie.</p>
+            <ul>
+                <li>
+                    <img src="https://asset.msi.com/resize/image/global/product/product_16093853844ee7866a719db5745fa37a680e9dd834.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png" alt="Placa Base MSI MPG">
+                    <strong>🔧 Placa Base MSI MPG</strong> - Disponibilidad: <span style="color: green;">05/03/2025</span>.
+                </li>
+                <li>
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_679436-MCO52027340598_102022-O.webp" alt="Memoria RAM DDR5 32GB">
+                    <strong>💾 Memoria RAM DDR5 32GB</strong> - Lanzamiento: <span style="color: green;">12/03/2025</span>.
+                </li>
+                <li>
+                    <img src="https://nomadaware.com.ec/wp-content/uploads/2022/06/NomadaWare_cooler_corsair_h100rgb-.png" alt="Refrigeración Líquida Corsair">
+                    <strong>❄️ Refrigeración Líquida Corsair</strong> - Disponible desde: <span style="color: green;">18/03/2025</span>.
+                </li>
+            </ul>
+        </section>
+    </aside>
+    
+    <main>
+        <!-- Secciones para navegación con el buscador -->
+        <section id="componentes-section">
+            <h2>🔩 Componentes</h2>
+            <p>Explora una amplia variedad de procesadores, tarjetas gráficas y más para personalizar tu PC a la medida.</p>
+            <img src="https://milagromartinez8.wordpress.com/wp-content/uploads/2013/01/hardware-picture-for-hardware.jpg" alt="Imagen de hardware" width="400">
+            <a href="https://tecnomegastore.ec/category/1/3N043-pc-computadora-componente" target="_blank" class="article-btn">Explorar</a>
+        </section>        
+    
+        <section id="noticias-section">
+            <h2>📰 Noticias</h2>
+            <p>Mantente al día con los últimos avances en hardware y software con artículos detallados y análisis expertos.</p>
+            <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/HQD2ILQOFVC4LDTZ25H5FCWX2E.jpg" alt="Noticias de tecnología" width="400">
+            <a href="https://www.abc.es/tecnologia/?ref=https%3A%2F%2Fwww.abc.es%2Ftecnologia%2F" target="_blank" class="article-btn">Leer Noticias</a>
+        </section>
+        
+        <section id="lanzamientos-section">
+            <h2>📅 Lanzamientos</h2>
+            <p>Descubre productos revolucionarios y sé el primero en probar la nueva tecnología con nuestras reseñas exclusivas.</p>
+            <img src="https://i.pinimg.com/736x/ff/8f/03/ff8f03ddd39718dfda88882c5df5dfab.jpg" alt="Nuevos lanzamientos tecnológicos" width="400">
+            <a href="https://www.amazon.com/Componentes-de-Computadoras-Pr%C3%B3ximos-Lanzamientos/s?rh=n%3A193870011%2Cp_n_date%3A1249034011&language=es" target="_blank" class="article-btn">Ver Lanzamientos</a>
+        </section>
+        
+        <section id="galeria-section">
+            <h2>📸 Galería</h2>
+            <p>Visualiza imágenes y videos de productos en acción, así como las mejores configuraciones de hardware.</p>
+            <img src="https://st4.depositphotos.com/32856862/40483/i/450/depositphotos_404831610-stock-photo-collage-different-computer-devices-equipment.jpg" alt="Galería de hardware" width="400">
+            <img src="https://stescazu.wordpress.com/wp-content/uploads/2010/10/collage.jpg?w=584" alt="Galería de hardware" width="400">
+            <img src="https://www.kindpng.com/picc/m/427-4270692_transparent-computadoras-png-collage-de-imagenes-de-computadoras.png" alt="Galería de hardware" width="400">
+            <a href="https://unsplash.com/es/s/fotos/computadora" target="_blank" class="article-btn">Ver Galería</a>
+        </section>
+        
+        <section id="foro-section">
+            <h2>💬 Foro</h2>
+            <p>Comparte experiencias, consulta dudas y conoce a otros entusiastas de la tecnología en nuestra comunidad.</p>
+            <img src="https://forohardware.com/i/presupuestos-pc-a-medida.jpeg" alt="Foro de tecnología" width="400">
+            <a href="https://forohardware.com/" target="_blank" class="article-btn">Ingresa Aquí</a>
+        </section>
+        
+        <section id="tienda-section">
+            <h2>🛒 Tienda</h2>
+            <p>Compra los mejores componentes con garantía, envíos rápidos y asesoramiento especializado.</p>
+            <img src="https://media.istockphoto.com/id/160331331/es/foto/venta-de-computadoras-port%C3%A1tiles-en-la-tienda.jpg?s=612x612&w=0&k=20&c=MuKlvKvRbaxDHtqjIdG2cMRyXZL-dr_gbqBOhSXvFn0=" alt="Imagen de la tienda" width="400">
+            <a href="https://tecnogame.ec/" target="_blank" class="article-btn">Ir a Tienda</a>
+        </section>        
+    
+        
+        <!-- Pie de Página -->
+        <footer>
+            <div class="container">
+                <div class="social-media">
+                    <a href="#">📘 Facebook</a>
+                    <a href="#">🐦 Twitter</a>
+                    <a href="#">📸 Instagram</a>
+                </div>
+                <div class="contacto">
+                    <p>📧 Contacto: <a href="mailto:info@computechstore.com">info@computechstore.com</a></p>
+                </div>
+                <div class="legal">
+                    <p>&copy; 2025 CompuTech Store. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="script.js"></script>
+
+    </body>
+</html>        
