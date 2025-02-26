@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Mapeo de términos de búsqueda a los ID de las secciones correspondientes
     const sectionsMap = {
-        componentes: 'componentes-section',
+        artistas: 'artistas-section',
         noticias: 'noticias-section',
         últimas: 'ultimas-section',
         ofertas: 'ofertas-section',
-        reviews: 'reviews-section',
+        reseñas: 'reseñas-section',
         lanzamientos: 'lanzamientos-section',
         galeria: 'galeria-section',
         foro: 'foro-section',
